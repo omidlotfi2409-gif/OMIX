@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دانلود OMIX | اپلیکیشن حسابداری فروشگاهی برای اندروید</title>
+<meta name="description" content="اومیکس؛ اپلیکیشن حسابداری فروشگاهی. ثبت فروش، خرید، موجودی کالا، بدهی مشتریان و گزارش سود. دانلود رایگان نسخه اندروید.">
+<meta property="og:title" content="دانلود OMIX | اپلیکیشن حسابداری فروشگاهی">
+<meta property="og:description" content="با اومیکس هیچ حساب‌وکتابی دشوار نیست.">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#16A34A;--green2:#22C55E;--navy:#0B1F3A;--navy2:#1E3A8A;--purple:#8B5CF6;
+  --bg:#F6F8FB;--card:#fff;--text:#0B1F3A;--muted:#5B6B82;--line:#E5EAF1;color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Vazirmatn',Tahoma,sans-serif;background:var(--bg);color:var(--text);line-height:1.9}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.3rem;text-decoration:none}
+.brand img{width:38px;height:38px;border-radius:10px}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem;font-weight:600}
+nav a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;border-radius:14px;font-weight:700;
+  text-decoration:none;font-size:1rem;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.green{background:linear-gradient(135deg,var(--green2),var(--green));color:#fff;box-shadow:0 8px 20px rgba(22,163,74,.3)}
+.btn.line{background:#fff;border:1.5px solid var(--line);color:var(--navy)}
+.btn.sm{padding:9px 18px;font-size:.92rem}
+.burger{display:none;background:none;border:0;font-size:1.7rem;cursor:pointer;color:var(--navy)}
+
+/* hero */
+.hero{background:linear-gradient(160deg,#fff 0%,#EAF7EF 100%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:56px;padding-bottom:56px}
+.tag{display:inline-block;background:#E4F6EA;color:var(--green);font-weight:700;font-size:.85rem;padding:4px 14px;border-radius:99px;margin-bottom:14px}
+.hero h1{font-size:clamp(2rem,5.5vw,3.1rem);font-weight:800;line-height:1.35}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero p.d{color:var(--muted);margin-top:14px;max-width:480px;font-size:1.05rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:.85rem}
+.meta b{color:var(--navy)}
+
+/* phone */
+.phone{width:230px;aspect-ratio:9/19;margin:0 auto;border-radius:34px;background:var(--navy);padding:9px;
+  box-shadow:0 30px 60px rgba(11,31,58,.28);position:relative;flex:none}
+.phone::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:60px;height:14px;border-radius:99px;background:#000;z-index:2}
+.scr{width:100%;height:100%;border-radius:26px;overflow:hidden;background:#F6F8FB;position:relative;display:flex;flex-direction:column}
+.scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.mock{padding:34px 12px 12px;display:flex;flex-direction:column;gap:9px;height:100%}
+.mock .hd{font-weight:800;font-size:.8rem}
+.mock .bal{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;border-radius:16px;padding:12px}
+.mock .bal small{opacity:.7;font-size:.65rem;display:block}
+.mock .bal b{font-size:1.15rem;color:var(--green2)}
+.mock .row{display:flex;gap:7px}
+.mock .mini{flex:1;background:#fff;border-radius:12px;padding:8px;font-size:.62rem;color:var(--muted);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.mock .mini b{display:block;color:var(--navy);font-size:.8rem}
+.mock .li{background:#fff;border-radius:12px;padding:8px 10px;display:flex;justify-content:space-between;font-size:.66rem;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.mock .li i{font-style:normal;font-weight:700;color:var(--green)}
+.mock .li i.r{color:#DC2626}
+.ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.8rem;padding:16px;
+  background:linear-gradient(160deg,#fff,#E4F6EA)}
+
+/* sections */
+section{padding:68px 0 0}
+.h{text-align:center;margin-bottom:34px}
+.h h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:800}
+.h p{color:var(--muted)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 6px 22px rgba(11,31,58,.05)}
+.card .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem;margin-bottom:12px;background:#E4F6EA}
+.card:nth-child(3n+2) .ic{background:#EFEAFE}
+.card h3{font-size:1.1rem}
+.card p{color:var(--muted);font-size:.93rem}
+
+.shots{display:flex;gap:26px;overflow-x:auto;padding:10px 4px 26px;scroll-snap-type:x mandatory}
+.shot{text-align:center;scroll-snap-align:center;flex:none}
+.shot .phone{width:190px}
+.shot p{margin-top:12px;font-weight:700;font-size:.92rem}
+
+.info{list-style:none;padding:0;margin:12px 0 18px}
+.info li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.92rem;color:var(--muted)}
+.info li b{color:var(--navy)}
+.card.main{border:2px solid var(--green2)}
+.card .btn{width:100%}
+
+.steps{display:grid;gap:14px;max-width:700px;margin:0 auto}
+.step{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 20px}
+.step i{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--green2),var(--green))}
+.step b{display:block}.step span{color:var(--muted);font-size:.92rem}
+
+.sup{background:var(--navy);color:#fff;border-radius:28px;padding:40px 24px;text-align:center}
+.sup p{opacity:.8;margin:6px 0 20px}
+.sup .btn{background:#fff;color:var(--navy)}
+
+footer{margin-top:64px;background:#fff;border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:.88rem}
+footer p+p{margin-top:6px}
+
+@media(max-width:760px){
+  .burger{display:block}
+  nav{display:none;position:absolute;top:68px;inset-inline:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:8px 20px}
+  nav.open{display:flex}
+  nav a{padding:12px 0;border-bottom:1px solid var(--line)}
+  .top .btn.sm{margin-inline-start:auto}
+  .hero .wrap{grid-template-columns:1fr;text-align:center;padding-top:36px}
+  .hero p.d{margin-inline:auto}
+  .btns,.meta{justify-content:center}
+  .phone{width:200px}
+}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#home">
+    <img src="logo.png" alt="لوگوی OMIX" width="38" height="38">
+    OMIX
+  </a>
+  <nav id="nav">
+    <a href="#home">خانه</a><a href="#features">امکانات</a><a href="#shots">تصاویر برنامه</a><a href="#install">راهنمای نصب</a><a href="#support">پشتیبانی</a>
+  </nav>
+  <a class="btn green sm" href="#download">دانلود OMIX</a>
+  <button class="burger" id="bg" aria-label="منو">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="tag">🤖 مخصوص اندروید</span>
+      <h1>با اومیکس <em>هیچ حساب‌وکتابی</em> دشوار نیست</h1>
+      <p class="d">با OMIX فروش، هزینه، موجودی کالا، بدهی مشتریان و سود کسب‌وکارتان را ساده‌تر مدیریت کنید.</p>
+      <div class="btns">
+        <a class="btn green" href="#download">⬇ دانلود رایگان OMIX</a>
+        <a class="btn line" href="#features">مشاهده امکانات</a>
+      </div>
+      <div class="meta">
+        <span>نسخه <b dir="ltr">1.0.0 (3)</b></span><span>حجم <b dir="ltr">68.88 MB</b></span><span>آخرین به‌روزرسانی <b>۱۴۰۵/۰۸/۱۸</b></span><span>اندروید ۱۳ به بالا</span>
+      </div>
+    </div>
+    <div class="phone"><div class="scr"><img src="shot1.jpg" alt="داشبورد اپلیکیشن OMIX" width="540" height="1096"></div></div>
+  </div>
+</section>
+
+<section id="features"><div class="wrap">
+  <div class="h"><h2>هر چه برای مغازه لازم دارید</h2><p>همه‌چیز ساده، فارسی و فقط چند لمس</p></div>
+  <div class="grid">
+    <div class="card"><div class="ic">🛒</div><h3>فروش و خرید</h3><p>ثبت و مدیریت فاکتورها</p></div>
+    <div class="card"><div class="ic">📦</div><h3>کالا و موجودی</h3><p>کنترل موجودی و گردش کالا</p></div>
+    <div class="card"><div class="ic">👥</div><h3>مشتریان</h3><p>مشاهده حساب، بدهی و طلب مشتریان</p></div>
+    <div class="card"><div class="ic">💰</div><h3>دخل‌وخرج</h3><p>ثبت دریافت‌ها، پرداخت‌ها و هزینه‌ها</p></div>
+    <div class="card"><div class="ic">📊</div><h3>گزارش سود</h3><p>مشاهده گزارش‌های مالی</p></div>
+    <div class="card"><div class="ic">🏦</div><h3>صندوق و بانک</h3><p>مدیریت گردش حساب‌های مالی</p></div>
+  </div>
+</div></section>
+
+<section id="shots"><div class="wrap">
+  <div class="h"><h2>نگاهی به محیط برنامه</h2><p>تصاویر واقعی از OMIX</p></div>
+  <div class="shots">
+    <div class="shot"><div class="phone"><div class="scr"><img src="shot1.jpg" alt="داشبورد اصلی در OMIX" loading="lazy" width="540" height="1096"></div></div><p>داشبورد اصلی</p></div>
+    <div class="shot"><div class="phone"><div class="scr"><img src="shot2.jpg" alt="ثبت فروش در OMIX" loading="lazy" width="540" height="1096"></div></div><p>ثبت فروش</p></div>
+    <div class="shot"><div class="phone"><div class="scr"><img src="shot3.jpg" alt="ثبت سریع در OMIX" loading="lazy" width="540" height="1096"></div></div><p>ثبت سریع</p></div>
+    <div class="shot"><div class="phone"><div class="scr"><img src="shot4.jpg" alt="گزارش‌ها در OMIX" loading="lazy" width="540" height="1096"></div></div><p>گزارش‌ها</p></div>
+    <div class="shot"><div class="phone"><div class="scr"><img src="shot5.jpg" alt="قفل و امنیت در OMIX" loading="lazy" width="540" height="1096"></div></div><p>قفل و امنیت</p></div>
+  </div></section>
+
+<section id="download"><div class="wrap">
+  <div class="h"><h2>همین حالا OMIX را نصب کنید</h2><p>این نسخه مخصوص اندروید است</p></div>
+  <div class="grid" style="max-width:760px;margin:0 auto">
+    <div class="card main">
+      <div class="ic">⬇️</div><h3>دانلود مستقیم APK</h3>
+      <ul class="info">
+        <li>نسخه<b dir="ltr">1.0.0 (3)</b></li><li>حجم<b dir="ltr">68.88 MB</b></li>
+        <li>تاریخ انتشار<b>۱۴۰۵/۰۸/۱۸</b></li><li>حداقل اندروید<b>۱۳</b></li>
+      </ul>
+      <a class="btn green" href="https://github.com/omidlotfi2409-gif/OMIX/releases/latest/download/omix.apk" download>⬇ دانلود مستقیم</a>
+    </div>
+    <div class="card">
+      <div class="ic">🛍️</div><h3>کافه‌بازار</h3>
+      <p>نصب و به‌روزرسانی ساده‌تر از فروشگاه ایرانی.</p>
+      <ul class="info"><li>مناسب برای<b>نصب با یک لمس</b></li></ul>
+      <!-- لینک صفحه اپ در کافه‌بازار را جایگزین کنید. مایکت و گوگل‌پلی بعد از انتشار اضافه شوند -->
+      <a class="btn line" href="https://cafebazaar.ir/app/?id=com.omidlotfi.omix&amp;ref=share" target="_blank" rel="noopener">دریافت از کافه‌بازار</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="install"><div class="wrap">
+  <div class="h"><h2>راهنمای نصب</h2><p>برای نصب مستقیم، یک بار اجازه‌ی نصب لازم است</p></div>
+  <div class="steps">
+    <div class="step"><i>۱</i><div><b>فایل را دانلود کنید</b><span>دکمه‌ی «دانلود مستقیم» را بزنید.</span></div></div>
+    <div class="step"><i>۲</i><div><b>اجازه‌ی نصب بدهید</b><span>اگر گوشی پرسید، نصب از این منبع را فعال کنید.</span></div></div>
+    <div class="step"><i>۳</i><div><b>OMIX را باز کنید</b><span>اولین فروشتان را ثبت کنید و شروع کنید.</span></div></div>
+  </div>
+</div></section>
+
+<section id="support"><div class="wrap">
+  <div class="sup">
+    <h2>پشتیبانی و گزارش مشکل</h2>
+    <p>سؤال، پیشنهاد یا مشکلی دارید؟ برایمان بنویسید.</p>
+    <!-- تلگرام و اینستاگرام را بعداً همین‌جا اضافه کنید -->
+    <a class="btn" href="mailto:omidlotfi2409@gmail.com">✉️ <bdi dir="ltr">omidlotfi2409@gmail.com</bdi></a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>© OMIX · اومیکس — هیچ حساب‌وکتابی دشوار نیست</p>
+  <p>اطلاعات کسب‌وکار شما روی گوشی خودتان ذخیره می‌شود.</p>
+</div></footer>
+
+<script>
+var n=document.getElementById('nav');
+document.getElementById('bg').onclick=function(){n.classList.toggle('open')};
+n.onclick=function(){n.classList.remove('open')};
+</script>
+</body>
+</html>
